@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type = "text/javascript">
+    var okay = 'lol';
+
+    function change(){
+
+        var me = document.getElementById('me');
+        if(okay == 'lol'){
+            me.src="2.jpg";
+            okay = "l";
+        }
+        else{
+            me.src = "1.jpg";
+            okay = 'lol';
+            
+        }
+    }
+        function write(){
+            var par_write = document.getElementById('par');
+            var input_write = document.getElementById('name').value;
+             par_write.innerHTML = "welcome" + input_write; 
+
+            }
+        
+        
+    </script>
+   
+    <title>Document</title>
+</head>
+<body>
+
+<p  id = "par"> </p>
+
+<form>
+
+Who Are you ?
+
+<input type="text"  id = "name"/><br/>
+
+<input type="button"  value="OKAY" onclick = "write();"/>
+
+</form>
+<img  height="500px" src="1.jpg"  id = "me" onclick="change();">
+</body>
+</html>
